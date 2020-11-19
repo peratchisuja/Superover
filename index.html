@@ -5,13 +5,14 @@
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>Superover</title>
      <link rel="stylesheet" href="style.css">
+   
   
  </head>
  <body>
       <div class="container">
           <div class="row">
             <div class="col">
-                <img src="assests/csk.png" class="pic" alt="csk" >
+                <img src="assests/csk.png" id="pic" alt="csk" width="150px" height="150px" >
                 <p class="name">CSK</p>
                 <div class="row runs">
                     <div>-</div>
@@ -27,7 +28,7 @@
             </div>
           
             <div class="col">
-                <img src="assests/mi.png" class="pic" alt="mi">
+                <img src="assests/mi.png" id="pic" alt="mi" width="150px" height="150px">
                 <p class="name">MI</p>
                 <div class="row runs">
                     <div>-</div>
@@ -40,8 +41,9 @@
            </div>
           </div>
           <div class="row">
-              <button id="strikebutton">Submit</button>
+              <button id="strikebutton" onclick="handlestrike()">Submit</button>
           </div>
       </div>
+      <script src="jscript.js"></script>
  </body>
  </html>

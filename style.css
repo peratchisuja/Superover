@@ -18,8 +18,11 @@ body{
     border-radius: 25px;
 }
 .row{
+
     display: flex;
     flex-direction: row;
+    margin-top: 50px;
+     
 }
 .col{
     display: flex;
@@ -32,11 +35,12 @@ body{
     justify-content: space-evenly;
 
 }
-.pic{
+ 
+#pic{
+     
+    border: 3px solid blueviolet;
     border-radius: 50%;
-    border-color: black;
-   
-
+    
 }
 .name{
     font-size: x-large;
@@ -44,6 +48,7 @@ body{
 }
 .score{
     font-size: xx-large;
+    align-content: center;
 
 }
 .runs{
