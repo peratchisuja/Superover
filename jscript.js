@@ -13,7 +13,7 @@ var score=[0,1,2,3,4,5,6]
 console.log(team1)
 console.log(team2)
 
-var toss
+var toss;
 window.onload=()=>{
 selectToss();
 updateName();
@@ -33,9 +33,9 @@ function updateName()
 }
 function updateButton()
 {
-   console.log(`${toss===1?team1.name:team2.name} BATTING`);
+   //console.log(`${toss===1?team1.name:team2.name} BATTING`);
 
-   if(team1.runs.length==6 && team1.runs.length==6 )
+   if(team1.runs.length==6 && team2.runs.length==6 )
    {
         console.log("Both team finished their chances")
    }
@@ -43,6 +43,8 @@ function updateButton()
        toss=team1.runs.length === 6 ? 2:
        team2.runs.length === 6 ? 1 : toss;
    }
+   console.log(`${toss===1?team1.name:team2.name} BATTING`);
+
 }
 
 handlestrike=()=>{
