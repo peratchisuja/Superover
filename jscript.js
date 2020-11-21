@@ -43,8 +43,8 @@ function updateButton()
    {
        button.remove();
         //console.log("Both team finished their chances");
-        console.log(team1.score===team2.score?"It is a draw":`${team1.score>team2.score?team1.name:team2.name} Wins`)
-        result.textContent=team1.score===team2.score?"It is a draw":`${team1.score>team2.score?team1.name:team2.name} Wins`
+        console.log(team1.score===team2.score?"It is a draw":`${team1.score>team2.score?team1.name:team2.name} WINS`)
+        result.textContent=team1.score===team2.score?"It is a draw":`${team1.score>team2.score?team1.name:team2.name} WINS..!`
    }
    else{
        toss=team1.runs.length === 6 ? 2:

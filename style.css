@@ -38,7 +38,7 @@ body{
  
 #pic{
      
-    border: 3px solid blueviolet;
+    border: 2px solid crimson;
     border-radius: 50%;
     
 }
@@ -58,7 +58,7 @@ body{
     justify-content: space-evenly;
 }
 #strikebutton{
-    background: blueviolet;
+    background: linear-gradient(135deg, #c02425, #f0cb35);
     width: 250px;
     height: 40px;
     font-size: x-large;
@@ -67,18 +67,20 @@ body{
     margin-top: 20px;
     border-radius: 20px;
     outline: none;
+    border: none;
 
 }
 
 #result{
-    font-size: xx-large;
-    color: rgba(240, 11, 99, 0.993); 
+    font-size: xx-large; 
+    color: crimson;
+    font-weight: bolder;
     text-align: center;
-    margin-top: 50px;
-    border: 3px solid blueviolet;
+    margin-top: 20px;
     border-radius: 50px;
     margin-right: 200px;
     margin-left: 200px;
+     
 
 
 }
