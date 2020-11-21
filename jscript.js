@@ -39,7 +39,8 @@ function updateButton()
    //console.log(`${toss===1?team1.name:team2.name} BATTING`);
     var button=document.getElementById("strikebutton")
     var result = document.getElementById("result");
-   if(team1.runs.length==6 && team2.runs.length==6 )
+    result.style.visibility=""
+   if(team1.runs.length === 6 && team2.runs.length === 6 )
    {
        button.remove();
         //console.log("Both team finished their chances");
@@ -79,13 +80,13 @@ function updateScores(){
     updateRuns()
 }
 function updateRuns(){
-    var team1runs =document.getElementById("team1runs").children
-    var team2runs =document.getElementById("team2runs").children
-    team1.runs.forEach((run,index)=>{
-        team1runs[index].textContent=run
+    var team1runs =document.getElementById("team1runs").children;
+    var team2runs =document.getElementById("team2runs").children;
+    team1.runs.forEach((run,index1)=>{
+        team1runs[index1].textContent=run
     });
-    team2.runs.forEach((run,index)=>{
-        team2runs[index].textContent=run
+    team2.runs.forEach((run,index2)=>{
+        team2runs[index2].textContent=run
     });
 
 }
@@ -93,7 +94,7 @@ var calcScore=(runs)=>{
     return runs.map(num=>{
         return num;
     }).reduce((total,num)=>total+num);
-}
+};
 
 
 
