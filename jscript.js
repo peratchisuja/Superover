@@ -69,8 +69,9 @@ handlestrike=()=>{
         console.log(runs)
         team2.score=calcScore(team2.runs)
     }
-    updateButton();
     updateScores();
+    updateButton();
+    
 }
 function updateScores(){
     console.log("team1.score " + team1.score)
